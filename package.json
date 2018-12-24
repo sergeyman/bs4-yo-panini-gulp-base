@@ -1,0 +1,56 @@
+{
+  "name": "bs-yo-panini-gulp-base",
+  "description": "Bootstrap 4 Panini base project with Yeoman start",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sergeyman",
+  "author": "ASV",
+  "license": "MIT",
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js",
+    "popper": "./node_modules/popper.js/dist/umd/popper.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "popper": "Popper"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies" : {
+    "bootstrap": "4.0.0-beta",
+    "popper.js": "^1.12.5",
+    "jquery": "^3.2.1",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.18.13",
+    "browserify": "^14.4.0",
+    "browserify-shim": "^3.8.14",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-defer": "^1.1.2",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-minify": "^1.0.0",
+    "gulp-purifycss": "^0.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-strip-css-comments": "^1.2.0",
+    "gulp-task-loader": "^1.4.4",
+    "panini": "^1.5.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "start": "gulp",
+    "serve": "gulp serve",
+    "prod": "gulp prod",
+    "deploy": "gulp deploy"
+  }
+}
